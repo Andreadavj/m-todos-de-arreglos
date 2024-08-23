@@ -6,6 +6,20 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>Todo List</h1>
+
+    <!-- Formulario para agregar tareas -->
+    <input type="text" id="nuevaTarea" placeholder="Nueva tarea">
+    <button onclick="agregarTarea()">Agregar Tarea</button>
+
+    <!-- Contador de tareas -->
+    <p>Total de tareas: <span id="contadorTareas">0</span></p>
+    <p>Tareas completadas: <span id="contadorCompletadas">0</span></p>
+
+    <!-- Lista de tareas -->
+    <ul id="listaTareas">
+        <!-- Aquí se agregan las tareas dinámicamente -->
+    </ul>
+    <script src="./assets/js/scrits.js" ></script>
 </body>
 </html>
