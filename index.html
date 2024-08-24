@@ -1,25 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
     <h1>Todo List</h1>
 
-    <!-- Formulario para agregar tareas -->
-    <input type="text" id="nuevaTarea" placeholder="Nueva tarea">
-    <button onclick="agregarTarea()">Agregar Tarea</button>
+    <div class="container">
+      <div class="container2">
+        <input type="text" id="nuevaTarea" placeholder="Nueva tarea" />
+        <button onclick="agregarTarea()">Agregar</button>
+      </div>
+<div class="contador">
+      <div >
+        <p>Total: <span id="contadorTareas">0</span></p>
+        <p>Realizadas: <span id="contadorCompletadas">0</span></p>
+      </div>
 
-    <!-- Contador de tareas -->
-    <p>Total de tareas: <span id="contadorTareas">0</span></p>
-    <p>Tareas completadas: <span id="contadorCompletadas">0</span></p>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Tarea</th>
+            <th>Realizado</th>
+            <th>Eliminar</th>
+          </tr>
+        </thead></div>
+        <tbody id="listaTareas">
+          <!-- Las tareas se agregarán aquí dinámicamente -->
+        </tbody>
+      </table>
+    </div>
 
-    <!-- Lista de tareas -->
-    <ul id="listaTareas">
-        <!-- Aquí se agregan las tareas dinámicamente -->
-    </ul>
-    <script src="./assets/js/scrits.js" ></script>
-</body>
+    <script src="./assets/js/scrits.js"></script>
+  </body>
 </html>

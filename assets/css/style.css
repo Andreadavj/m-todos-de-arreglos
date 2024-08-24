@@ -1,0 +1,156 @@
+/* body {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+}
+h1 {
+    text-align: center;
+}
+.container {
+    margin-top: 20px;
+}
+input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    margin-right: 10px;
+}
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #45a049;
+}
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid #ddd;
+}
+th, td {
+    padding: 8px;
+    text-align: center;
+}
+th {
+    background-color: #f2f2f2;
+}
+.completada {
+    text-decoration: line-through;
+    color: grey;
+}
+.delete-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.delete-btn:hover {
+    background-color: darkred;
+}
+.checkbox {
+    cursor: pointer;
+} */
+
+
+body {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+}
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.container2{
+    display: flex;
+    gap: 9px;
+}
+/* Estilo del campo de nueva tarea y el botón de agregar */
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #45a049;
+}
+/* Estilo para el resumen */
+.resumen {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #333;
+}
+.resumen span {
+    font-weight: bold;
+}
+/* Tabla de tareas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.contador{
+    display: flex;
+    padding: 10px;
+}
+table, th, td {
+    
+    border: 1px solid #ddd;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+    text-align: center;
+}
+td {
+    text-align: center;
+}
+.completada {
+    text-decoration: line-through;
+    color: grey;
+}
+.delete-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.delete-btn:hover {
+    background-color: darkred;
+}
+.checkbox {
+    cursor: pointer;
+}

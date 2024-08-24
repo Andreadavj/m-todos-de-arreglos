@@ -24,20 +24,24 @@ let tareas = [];
 
         function actualizarListaTareas() {
             const listaTareas = document.getElementById("listaTareas");
-            listaTareas.innerHTML = ""; // Limpiar lista
+            listaTareas.innerHTML = ""; // Limpiar la lista
 
             tareas.forEach(tarea => {
-                const li = document.createElement("li");
-                li.innerHTML = `
-                    <span class="${tarea.completada ? 'completada' : ''}">
+                const fila = document.createElement("tr");
+                fila.innerHTML = `
+                    <td>${tarea.id}</td>
+                    <td class="${tarea.completada ? 'completada' : ''}">
                         ${tarea.descripcion}
-                    </span>
-                    <button onclick="marcarCompletada(${tarea.id})">
-                        ${tarea.completada ? 'Desmarcar' : 'Completar'}
-                    </button>
-                    <button onclick="eliminarTarea(${tarea.id})">Eliminar</button>
+                    </td>
+                    <td>
+                        <input type="checkbox" class="checkbox" 
+                        onclick="marcarCompletada(${tarea.id})" ${tarea.completada ? 'checked' : ''}>
+                    </td>
+                    <td>
+                        <button class="delete-btn" onclick="eliminarTarea(${tarea.id})">✖</button>
+                    </td>
                 `;
-                listaTareas.appendChild(li);
+                listaTareas.appendChild(fila);
             });
 
             // Actualizar contadores
